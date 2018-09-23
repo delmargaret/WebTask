@@ -68,11 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="a.html" />
+    <Content Include="b.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculator.cs" />
     <Compile Include="Handler.cs" />
+    <Compile Include="Handler2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
