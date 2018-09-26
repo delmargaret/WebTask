@@ -51,13 +51,13 @@ namespace WebApp
                 switch (result.type)
                 {
                     case QuadraticEquationSolver.SolutionType.ComplexRoots:
-                        solution = string.Format("x<sub>1</sub> = {0}+{1}i, x<sub>2</sub> = {0}-{1}i", Math.Round(result.x1, 2), Math.Round(result.x2, 2));
+                        solution = string.Format("x<sub>1</sub> = {0}, x<sub>2</sub> = {1}", result.x1.ToString(), result.x2.ToString());
                         break;
                     case QuadraticEquationSolver.SolutionType.OneRoot:
-                        solution = string.Format("x<sub>1</sub> = {0}", Math.Round(result.x1, 2));
+                        solution = string.Format("x<sub>1</sub> = {0}", result.x1.ToString());
                         break;
                     case QuadraticEquationSolver.SolutionType.TwoRoots:
-                        solution = string.Format("x<sub>1</sub> = {0}, x<sub>2</sub> = {1}", Math.Round(result.x1, 2), Math.Round(result.x2, 2));
+                        solution = string.Format("x<sub>1</sub> = {0}, x<sub>2</sub> = {1}", result.x1.ToString(), result.x2.ToString());
                         break;
                     default:
                         solution = "no solution";
